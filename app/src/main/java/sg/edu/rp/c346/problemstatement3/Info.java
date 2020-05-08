@@ -60,7 +60,7 @@ public class Info extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Info.this, Add.class);
+                Intent i = new Intent(Info.this, Add.class)
                 i.putExtra("module", a);
                 startActivityForResult(i, requestCodeForAdd);
             }
